@@ -1,0 +1,17 @@
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Infrastructure.deps.json
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Infrastructure.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Infrastructure.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.csproj.AssemblyReference.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.AssemblyInfoInputs.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.AssemblyInfo.cs
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.csproj.CoreCompileInputs.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/refint/OnionProject.Infrastructure.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/ref/OnionProject.Infrastructure.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Application.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Domain.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Application.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/bin/Debug/net7.0/OnionProject.Domain.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Infrastructure/obj/Debug/net7.0/OnionProject.Infrastructure.csproj.CopyComplete

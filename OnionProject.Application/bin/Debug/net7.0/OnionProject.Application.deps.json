@@ -1,0 +1,284 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "OnionProject.Application/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.2",
+          "Microsoft.EntityFrameworkCore": "8.0.0-preview.2.23128.3",
+          "OnionProject.Domain": "1.0.0"
+        },
+        "runtime": {
+          "OnionProject.Application.dll": {}
+        }
+      },
+      "FluentValidation/11.5.2": {
+        "runtime": {
+          "lib/net7.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.2.0"
+          }
+        }
+      },
+      "FluentValidation.AspNetCore/11.3.0": {
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "FluentValidation.DependencyInjectionExtensions": "11.5.2"
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.3.0.0"
+          }
+        }
+      },
+      "FluentValidation.DependencyInjectionExtensions/11.5.2": {
+        "dependencies": {
+          "FluentValidation": "11.5.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.2.0"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore/8.0.0-preview.2.23128.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Caching.Memory": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Logging": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/8.0.0-preview.2.23128.3": {
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Analyzers/8.0.0-preview.2.23128.3": {},
+      "Microsoft.Extensions.Caching.Abstractions/8.0.0-preview.2.23128.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.Caching.Memory/8.0.0-preview.2.23128.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Options": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/8.0.0-preview.2.23128.3": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0-preview.2.23128.3": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/8.0.0-preview.2.23128.3": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Options": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.0-preview.2.23128.3": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/8.0.0-preview.2.23128.3": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0-preview.2.23128.3",
+          "Microsoft.Extensions.Primitives": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/8.0.0-preview.2.23128.3": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.12803"
+          }
+        }
+      },
+      "OnionProject.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0-preview.2.23128.3"
+        },
+        "runtime": {
+          "OnionProject.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OnionProject.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/11.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
+      "path": "fluentvalidation/11.5.2",
+      "hashPath": "fluentvalidation.11.5.2.nupkg.sha512"
+    },
+    "FluentValidation.AspNetCore/11.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jtFVgKnDFySyBlPS8bZbTKEEwJZnn11rXXJ2SQnjDhZ56rQqybBg9Joq4crRLz3y0QR8WoOq4iE4piV81w/Djg==",
+      "path": "fluentvalidation.aspnetcore/11.3.0",
+      "hashPath": "fluentvalidation.aspnetcore.11.3.0.nupkg.sha512"
+    },
+    "FluentValidation.DependencyInjectionExtensions/11.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ycibtdWdluIx0aTgQvO7Kjd5GjNRpD92z4/hEJc8u1luZ5ff1k0JpwPGmL+YFbPVYFk+A6gYIrVI4QdZfSJJdQ==",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.5.2",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.11.5.2.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1bOVqUlmcV28rhWVYGOOZ0W/a1aSoZsAUy71tVUwLtOV1UxBqJMhYS8EQs/BSpvwfAnmOcgAXH4A43NnqFlEbQ==",
+      "path": "microsoft.entityframeworkcore/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.entityframeworkcore.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I0cjryVMJrakoWDUL8ysuSaimPdA+NZAIT5nT0o74nLYXyahaKLuQuDYkpIH3hqf8IkEgIQQC/s1sFKORQ/r6A==",
+      "path": "microsoft.entityframeworkcore.abstractions/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tjGBFS56wu/aJyYCBRi2arZt/Qp6mqnPmT5EuXv0Y69ICm/k2KQt+4IhXMX+/mjdJf7jdqQxIhy4sHBMVFbiJw==",
+      "path": "microsoft.entityframeworkcore.analyzers/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Abstractions/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T6DEBMnCGLUJYjwjEZ7YdOjc7pgenYNXdDQadLwZF25XwLm5hjI2Uwak1sZxaifyI3vLZbmIx9GisDwWjQXvkw==",
+      "path": "microsoft.extensions.caching.abstractions/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.caching.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Caching.Memory/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EYJxzpmG6qcHej44wcdVTIwJ2GzFMlanmn1bp5+s2vWhogmidlV9XlG2XVjvNXBYNAkIxueuIkhvnAyloTrTpQ==",
+      "path": "microsoft.extensions.caching.memory/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.caching.memory.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pucB/ZmJDQb6EJ2TwQs8ZTXOPIZFO0YjVSKuo1AkDOqxsRc70OmQ3egbVPUAC+PmtuJeietTACeNgDPqYGgH8A==",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.dependencyinjection.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BchUPkH1mMDCdG/lVP4VvYs4UmAY3WbSehaPBqFNcBdf1bPwuwpHJwDGRY3jn6ltHyqh2xEG/lewZNqm2TE5Kg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u+6+0XKdO1VlnNYKzaIklyfgCSsBs21yZfEVKFpgJ0Ppx4BULIyJPqaEzCMaK0ajDw/k7xe8vafMUjmjX6h2UA==",
+      "path": "microsoft.extensions.logging/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.logging.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kfj/lfXrJvSND1YVVmcvQD6zwbkKUV5vs+4rOig0wESj5Buh8+191P02Tm9EOEOo9kcJSsvzaSNFM7De/l+sHA==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iqd3auorZ8LBgqHIneWO1qTruy4i3JrfjO2F9i4NrpmkzKWbJ9WY2TAJTdWcAMR8ppBYEUZbXUnxQK6UdAV2jA==",
+      "path": "microsoft.extensions.options/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.options.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/8.0.0-preview.2.23128.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8W7bmEvjgV6PmJ+L4AOT1mhYKsmyRNXfS7Ej5PSUvIpozBxTMktlrxPghDPL//zi0FBdfLOaMPADoLb1fqxCLA==",
+      "path": "microsoft.extensions.primitives/8.0.0-preview.2.23128.3",
+      "hashPath": "microsoft.extensions.primitives.8.0.0-preview.2.23128.3.nupkg.sha512"
+    },
+    "OnionProject.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

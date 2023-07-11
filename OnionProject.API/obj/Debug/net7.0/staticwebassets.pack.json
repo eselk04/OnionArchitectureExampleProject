@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/product-images/2--question20230702124114.jpg",
+      "PackagePath": "staticwebassets/product-images/2--question20230702124114.jpg"
+    },
+    {
+      "Id": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/product-images/2--question20230702124429.jpg",
+      "PackagePath": "staticwebassets/product-images/2--question20230702124429.jpg"
+    },
+    {
+      "Id": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/resource/product-images/ss.jpeg",
+      "PackagePath": "staticwebassets/resource/product-images/ss.jpeg"
+    },
+    {
+      "Id": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/resource/product-images/ss20230703164356.jpeg",
+      "PackagePath": "staticwebassets/resource/product-images/ss20230703164356.jpeg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.newproj.props",
+      "PackagePath": "build\\newproj.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.newproj.props",
+      "PackagePath": "buildMultiTargeting\\newproj.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.newproj.props",
+      "PackagePath": "buildTransitive\\newproj.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.newproj.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

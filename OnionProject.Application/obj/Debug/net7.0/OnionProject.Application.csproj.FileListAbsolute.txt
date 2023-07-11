@@ -1,0 +1,15 @@
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/bin/Debug/net7.0/OnionProject.Application.deps.json
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/bin/Debug/net7.0/OnionProject.Application.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/bin/Debug/net7.0/OnionProject.Application.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/bin/Debug/net7.0/OnionProject.Domain.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/bin/Debug/net7.0/OnionProject.Domain.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.csproj.AssemblyReference.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.AssemblyInfoInputs.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.AssemblyInfo.cs
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.csproj.CoreCompileInputs.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.csproj.CopyComplete
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/refint/OnionProject.Application.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/OnionProject.Application.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Application/obj/Debug/net7.0/ref/OnionProject.Application.dll

@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "JqPO6jxc4cPc4eQp4CVA+0mHJmBpdgBnkC0kGmZMVII=",
+  "Source": "newproj",
+  "BasePath": "_content/newproj",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "newproj/wwwroot",
+      "Source": "newproj",
+      "ContentRoot": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/",
+      "BasePath": "_content/newproj",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/product-images/2--question20230702124114.jpg",
+      "SourceId": "newproj",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/",
+      "BasePath": "_content/newproj",
+      "RelativePath": "product-images/2--question20230702124114.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/2--question20230702124114.jpg"
+    },
+    {
+      "Identity": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/product-images/2--question20230702124429.jpg",
+      "SourceId": "newproj",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/",
+      "BasePath": "_content/newproj",
+      "RelativePath": "product-images/2--question20230702124429.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/product-images/2--question20230702124429.jpg"
+    },
+    {
+      "Identity": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/resource/product-images/ss.jpeg",
+      "SourceId": "newproj",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/",
+      "BasePath": "_content/newproj",
+      "RelativePath": "resource/product-images/ss.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/resource/product-images/ss.jpeg"
+    },
+    {
+      "Identity": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/resource/product-images/ss20230703164356.jpeg",
+      "SourceId": "newproj",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/wwwroot/",
+      "BasePath": "_content/newproj",
+      "RelativePath": "resource/product-images/ss20230703164356.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/resource/product-images/ss20230703164356.jpeg"
+    }
+  ]
+}

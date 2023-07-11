@@ -1,0 +1,12 @@
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/bin/Debug/net7.0/OnionProject.Domain.deps.json
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/bin/Debug/net7.0/OnionProject.Domain.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/bin/Debug/net7.0/OnionProject.Domain.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.csproj.AssemblyReference.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.AssemblyInfoInputs.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.AssemblyInfo.cs
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.csproj.CoreCompileInputs.cache
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/refint/OnionProject.Domain.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/OnionProject.Domain.pdb
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.Domain/obj/Debug/net7.0/ref/OnionProject.Domain.dll
