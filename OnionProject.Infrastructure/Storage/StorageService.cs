@@ -8,6 +8,11 @@ public class StorageService : IStorageService
 {
     private readonly IStorage _storage;
 
+    public StorageService(IStorage storage)
+    {
+        _storage = storage;
+    }
+
     public Task<List<(string fileName, string path)>> UploadAsync(string pathOrContainer, IFormFileCollection files) =>
         _storage.UploadAsync(pathOrContainer, files);
 
@@ -19,4 +24,10 @@ public class StorageService : IStorageService
 
     public bool HasFile(string pathOrContainerName, string fileName) =>
         _storage.HasFile(pathOrContainerName, fileName);
+
+    public string StorageName
+    {
+        get  =>  _storage.GetType().Name;
+        set { }
+    }
 }
