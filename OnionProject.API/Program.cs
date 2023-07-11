@@ -1,6 +1,7 @@
 using FluentValidation.AspNetCore;
 using OnionProject.Application.Validators.Products;
 using OnionProject.Infrastructure;
+using OnionProject.Infrastructure.Enums;
 using OnionProject.Infrastructure.Filters;
 using OnionProject.Infrastructure.Storage.Local;
 using OnionProject.Persistence;
@@ -15,6 +16,7 @@ builder.Services.AddControllers(o=>o.Filters.Add<ValidationFilter>()).AddFluentV
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddStorage<LocalStorage>();
 builder.Services.AddSwaggerGen();
+builder.Services.AddStorage(StorageType.storagetype.Local);
 builder.Services.AddInfrastructureServices();
 builder.Services.AddPersistenceServices();
 builder.Services.AddCors(options=>options.AddDefaultPolicy(policy=>policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));

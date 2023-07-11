@@ -1,18 +1,11 @@
  using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using OnionProject.Application.Abstractions;
+ using OnionProject.Application.Abstractions;
  using OnionProject.Application.Abstractions.Storage;
  using OnionProject.Application.Pagination;
- using OnionProject.Application.Repositories.File;
  using OnionProject.Application.Repositories.Product;
  using OnionProject.Application.Repositories.ProductImage;
- using OnionProject.Application.Services;
  using OnionProject.Application.ViewModels;
-using OnionProject.Domain.Entities;
-using OnionProject.Domain.Entities.Common;
- using OnionProject.Persistence.Repository.Files;
- using IProductImageWriteRepository = OnionProject.Persistence.Repository.ProductImages.IProductImageWriteRepository;
+ using OnionProject.Domain.Entities;
 
  namespace newproj.Controllers;
 [Route("products")]
@@ -39,6 +32,7 @@ public class ProductController : Controller
         _ProductWriteRepository = productWriteRepository;
         _webHostEnvironment = webHostEnvironment;
         _storageService = storageService;
+        _productImageWriteRepository = productImageWriteRepository;
 
 
 
@@ -106,11 +100,10 @@ public class ProductController : Controller
 
     [HttpPost("[action]")]
     public async Task<IActionResult> Upload()
-    {
-        var datas = await _storageService.UploadAsync("resource/files", Request.Form.Files);
-     await    _productImageWriteRepository.AddRangeAsync(datas.Select(u=>new ProductImage(){Name = u.fileName, Path = u.path}).ToList());
+    { var datas = await _storageService.UploadAsync("resource/product-images", Request.Form.Files);
+     await    _productImageWriteRepository.AddRangeAsync(datas.Select(u=>new ProductImage(){Name = u.fileName, Path = u.path,Storage = _storageService.StorageName}).ToList());
      await _productImageWriteRepository.Save();
-     return Ok();
+     return Ok("Success");
      
     }
 

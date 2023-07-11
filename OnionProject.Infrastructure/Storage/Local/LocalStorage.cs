@@ -25,8 +25,8 @@ public class LocalStorage : ILocalStorage
             Directory.CreateDirectory(uploadPath);
         List<(string fileName, string path)> datas = new();
         foreach (IFormFile file in  files)
-        { await CopyFileAsync(Path.Combine(pathOrContainer,file.Name),file);
-            datas.Add((file.Name , $"{pathOrContainer}//{file.Name}"));
+        { await CopyFileAsync(Path.Combine(uploadPath,file.Name),file);
+            datas.Add((file.Name , $"{uploadPath}//{file.Name}"));
         }
         return datas;
             //todo Eğer ki yukardaki if geçerli değil ise bueada dosyaların sunucuda tutulmaya calısıluırken hata alındıgına dail hata oluştuğuna dair bildiilmeli.

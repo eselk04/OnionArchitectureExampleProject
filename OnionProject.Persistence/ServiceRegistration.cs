@@ -11,7 +11,7 @@ using OnionProject.Persistence.Repository.Files;
 using OnionProject.Persistence.Repository.InvoiceFiles;
 using OnionProject.Persistence.Repository.ProductImages;
 using OnionProject.Persistence.Repository.Products;
-using IProductImageWriteRepository = OnionProject.Persistence.Repository.ProductImages.IProductImageWriteRepository;
+using IProductImageWriteRepository = OnionProject.Persistence.Repository.ProductImages.ProductImageWriteRepository;
 
 namespace OnionProject.Persistence;
 
@@ -27,7 +27,7 @@ public static class ServiceRegistration
         services.AddScoped<IFileReadRepository, FileReadRepository>();
         services.AddScoped<IFileWriteRepository, FileWriteRepository>();
         services.AddScoped<IProductImageReadRepository, ProductImageReadRepository>();
-        services.AddScoped<IProductImageWriteRepository, IProductImageWriteRepository>();
+        services.AddScoped<Application.Repositories.ProductImage.IProductImageWriteRepository,ProductImageWriteRepository>();
         services.AddScoped<IInvoiceReadRepository, InvoiceReadRepository>();
         services.AddScoped<IInvoiceWriteRepository, InvoiceWriteRepository>();
 

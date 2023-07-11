@@ -18,7 +18,7 @@ public class PContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql(@"User ID = :) ; Password = :) ; Host = :);Port =:); Database = :)");
+        optionsBuilder.UseNpgsql(@"User ID =postgres ; Password = eselk00101; Host = localhost;Port =5432; Database = postgres");
     }
 
 
