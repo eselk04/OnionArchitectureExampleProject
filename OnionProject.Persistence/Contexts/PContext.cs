@@ -1,4 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using OnionProject.Domain.Entities;
 using OnionProject.Domain.Entities.Common;
 using File = OnionProject.Domain.Entities.File;
@@ -7,6 +10,12 @@ namespace OnionProject.Persistence.Context;
 
 public class PContext : DbContext
 {
+    private readonly IConfiguration _configuration;
+    public PContext(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
+
     
     public DbSet<Product>  Products{ get; set; }
     public DbSet<Customer> Customers{ get; set; }
@@ -18,7 +27,7 @@ public class PContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql(@"User ID =postgres ; Password = eselk00101; Host = localhost;Port =5432; Database = postgres");
+        optionsBuilder.UseNpgsql(_configuration.GetValue<string>("PostgreSql").ToString());
     }
 
 
