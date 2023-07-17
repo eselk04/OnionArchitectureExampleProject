@@ -1,3 +1,4 @@
+ using System.Runtime.InteropServices.JavaScript;
  using Microsoft.AspNetCore.Mvc;
  using OnionProject.Application.Abstractions;
  using OnionProject.Application.Abstractions.Storage;
@@ -96,6 +97,9 @@ public class ProductController : Controller
         await _ProductWriteRepository.RemoveAsync(Convert.ToString(id));
          _ProductWriteRepository.Save();
          return Ok();
+
+
+   
     }
 
     [HttpPost("[action]")]

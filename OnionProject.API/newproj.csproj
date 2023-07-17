@@ -27,12 +27,25 @@
 
   <ItemGroup>
     <Folder Include="wwwroot" />
-    <Folder Include="wwwroot\resource\product-images" />
   </ItemGroup>
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\product-images\2--question20230702124114.jpg" />
     <_ContentIncludedByDefault Remove="wwwroot\product-images\2--question20230702124429.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\brave-browser.desktop" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\com.jetbrains.Rider.desktop" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\delete.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\discord.desktop" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\Document.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\Emre Selek 2020555056-2.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\emu8086.desktop" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\emu8086.lnk" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\Exponential%0D%0ADistribution presentation.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\hzali.pdf" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\Midterm Report - Template.docx" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\ss.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\ss20230703164356.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\resource\product-images\Text File (1).html" />
   </ItemGroup>
 
 </Project>

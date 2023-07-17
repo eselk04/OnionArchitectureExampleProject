@@ -7,7 +7,7 @@ using File = OnionProject.Domain.Entities.File;
 
 namespace OnionProject.Infrastructure.Storage.Local;
 
-public class LocalStorage : ILocalStorage
+public class LocalStorage : ILocalStorage  
 {
 
     private IWebHostEnvironment webHostEnvironment;
@@ -25,7 +25,7 @@ public class LocalStorage : ILocalStorage
             Directory.CreateDirectory(uploadPath);
         List<(string fileName, string path)> datas = new();
         foreach (IFormFile file in  files)
-        { await CopyFileAsync(Path.Combine(uploadPath,file.Name),file);
+        { await CopyFileAsync(Path.Combine(uploadPath,renameFileAsync(file.Name).ToString()),file);
             datas.Add((file.Name , $"{uploadPath}//{file.Name}"));
         }
         return datas;
@@ -45,7 +45,7 @@ public class LocalStorage : ILocalStorage
     public bool HasFile(string pathOrContainerName, string fileName) => System.IO.File.Exists($"{pathOrContainerName}//{fileName}");
 
 
-    async Task<bool> CopyFileAsync(string path, IFormFile file)
+   private async Task<bool> CopyFileAsync(string path, IFormFile file)
     {
         try
         {
@@ -62,7 +62,7 @@ public class LocalStorage : ILocalStorage
         }
     }
 
-    async Task<string> renameFileAsync(string fileName)
+   private async Task<string> renameFileAsync(string fileName)
     {
         
          string newFileName = await Task.Run(() =>

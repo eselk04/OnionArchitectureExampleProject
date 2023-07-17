@@ -9,5 +9,6 @@ public interface IStorage
     List<string> GetFiles(string pathOrContainerName);
     bool HasFile(string pathOrContainerName, string fileName);
     
+    
 
 }

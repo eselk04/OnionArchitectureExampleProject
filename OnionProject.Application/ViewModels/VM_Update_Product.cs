@@ -12,4 +12,6 @@ public class VM_Update_Product
     public string Brand { get; set; }     // Brand or manufacturer of the product
     public string ImageUrl { get; set; }  // URL of th
     
+    
 }
+
