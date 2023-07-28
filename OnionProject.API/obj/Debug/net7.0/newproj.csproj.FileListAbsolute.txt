@@ -107,3 +107,9 @@
 /home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/OnionProject.Infrastructure.dll
 /home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/OnionProject.Infrastructure.pdb
 /home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/newproj.staticwebassets.runtime.json
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/Azure.Core.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/Azure.Storage.Blobs.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/Azure.Storage.Common.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/System.IO.Hashing.dll
+/home/emre/RiderProjects/ClassLibrary1/OnionProject.API/bin/Debug/net7.0/System.Memory.Data.dll

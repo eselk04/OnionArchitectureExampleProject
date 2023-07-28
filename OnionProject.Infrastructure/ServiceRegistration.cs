@@ -3,9 +3,9 @@ using OnionProject.Application.Abstractions.Storage;
 using OnionProject.Application.Services;
 using OnionProject.Infrastructure.Enums;
 using OnionProject.Infrastructure.Services;
-using OnionProject.Infrastructure.Services.Storage.Azure;
 using OnionProject.Infrastructure.Storage;
 using OnionProject.Infrastructure.Storage.Local;
+using OnionProject.Infrastructure.Services.Storage.Azure;
 
 namespace OnionProject.Infrastructure;
 
@@ -18,7 +18,6 @@ public static class ServiceRegistration
       
 
     }
-
     public static void AddStorage<T>(this IServiceCollection services) where T : class,IStorage
     {
         services.AddScoped<IStorage, T>();
@@ -26,6 +25,8 @@ public static class ServiceRegistration
 
     public static void AddStorage(this IServiceCollection services, StorageType.storagetype storageType)
     {
+        
+        
         switch (storageType)
         {
             case StorageType.storagetype.Local:
@@ -35,6 +36,7 @@ public static class ServiceRegistration
                 services.AddScoped<IStorage, AzureStorage>();
                 break;
             case StorageType.storagetype.Aws:
+           
                 break;
             default:
                 services.AddScoped<IStorage, LocalStorage>();
