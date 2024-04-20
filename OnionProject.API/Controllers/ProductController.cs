@@ -1,14 +1,17 @@
- using System.Runtime.InteropServices.JavaScript;
- using Microsoft.AspNetCore.Mvc;
- using OnionProject.Application.Abstractions;
- using OnionProject.Application.Abstractions.Storage;
- using OnionProject.Application.Pagination;
- using OnionProject.Application.Repositories.Product;
- using OnionProject.Application.Repositories.ProductImage;
- using OnionProject.Application.ViewModels;
- using OnionProject.Domain.Entities;
+using System.Runtime.InteropServices.JavaScript;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using OnionProject.Application.Abstractions;
+using OnionProject.Application.Abstractions.Storage;
+using OnionProject.Application.Features.Queries.Product.GetAllProduct;
+using OnionProject.Application.Features.Queries.Product.GetProductById;
+using OnionProject.Application.Pagination;
+using OnionProject.Application.Repositories.Product;
+using OnionProject.Application.Repositories.ProductImage;
+using OnionProject.Application.ViewModels;
+using OnionProject.Domain.Entities;
 
- namespace newproj.Controllers;
+namespace newproj.Controllers;
 [Route("products")]
 public class ProductController : Controller
 {
@@ -19,14 +22,14 @@ public class ProductController : Controller
     private IProductReadRepository _productReadRepository; 
     private IProductWriteRepository _ProductWriteRepository { get; set; }
     private IStorageService _storageService;
-  
+    private readonly IMediator _mediator;
   
 
     public ProductController(IWebHostEnvironment webHostEnvironment,
         IProductService productService, IProductReadRepository productReadRepository,
         IProductWriteRepository productWriteRepository,
         IProductImageReadRepository productImageReadRepository, IProductImageWriteRepository productImageWriteRepository
-        , IStorageService storageService)
+        , IStorageService storageService , IMediator mediator )
     {
         _productService = productService;
         _productReadRepository = productReadRepository;
@@ -34,22 +37,27 @@ public class ProductController : Controller
         _webHostEnvironment = webHostEnvironment;
         _storageService = storageService;
         _productImageWriteRepository = productImageWriteRepository;
-
-
+       
+        _mediator = mediator;
 
     }
-    
-    
-    [HttpGet("getp")]
-    public IActionResult GetAll([FromQuery] Pagination pagination)
+
+    [HttpGet()]
+    public async Task<IActionResult> Get([FromQuery] GetProductByIdQueryRequest getProductByIdQueryRequest)
     {
-        var totalCount = _productReadRepository.GetAll().ToList().Count;
-        var products = _productReadRepository.GetAll().Skip(pagination.Page * pagination.Size)
-            .Take(pagination.Size).ToList();
-        return Ok(new
-        {
-            products,totalCount
-        });
+
+        GetProductByIdQueryResponse response = await _mediator.Send(getProductByIdQueryRequest);
+        return Ok(response);
+        
+    }
+
+
+    [HttpGet("getp")]
+    public async Task<IActionResult> GetAll([FromQuery] GetAllProductQueryRequest getAllProductQueryRequest)
+    {
+       GetAllProductQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+
+        return Ok(response);
     }
 
     [HttpPost("add")]
