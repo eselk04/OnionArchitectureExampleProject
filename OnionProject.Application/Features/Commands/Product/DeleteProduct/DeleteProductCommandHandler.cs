@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using OnionProject.Application.Repositories.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,18 @@ namespace OnionProject.Application.Features.Commands.Product.DeleteProduct
 {
     internal class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommandRequest, DeleteProductCommandResponse>
     {
+
+        IProductWriteRepository productWriteRepository;
+        public DeleteProductCommandHandler(IProductWriteRepository _productWriteRepository)
+        {
+            productWriteRepository = _productWriteRepository;   
+        }
         public async Task<DeleteProductCommandResponse> Handle(DeleteProductCommandRequest request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            productWriteRepository.RemoveAsync(request.ProductId);
+            return new();
+
+
         }
     }
 }

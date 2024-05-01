@@ -10,6 +10,8 @@ using OnionProject.Persistence.Context;
 using OnionProject.Persistence.Repository.Files;
 using OnionProject.Persistence.Repository.InvoiceFiles;
 using OnionProject.Persistence.Repository.ProductImages;
+using Microsoft.Extensions.Configuration;
+
 using OnionProject.Persistence.Repository.Products;
 using IProductImageWriteRepository = OnionProject.Persistence.Repository.ProductImages.ProductImageWriteRepository;
 
@@ -30,7 +32,9 @@ public static class ServiceRegistration
         services.AddScoped<Application.Repositories.ProductImage.IProductImageWriteRepository,ProductImageWriteRepository>();
         services.AddScoped<IInvoiceReadRepository, InvoiceReadRepository>();
         services.AddScoped<IInvoiceWriteRepository, InvoiceWriteRepository>();
+       
+
 
     }
-    
+
 }

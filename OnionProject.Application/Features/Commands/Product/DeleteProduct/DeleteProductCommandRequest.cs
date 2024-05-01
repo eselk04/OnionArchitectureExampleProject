@@ -9,5 +9,7 @@ namespace OnionProject.Application.Features.Commands.Product.DeleteProduct
 {
     internal class DeleteProductCommandRequest : IRequest<DeleteProductCommandResponse>
     {
+        public string ProductId { get; set; }
+
     }
 }

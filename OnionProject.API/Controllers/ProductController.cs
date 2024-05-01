@@ -4,12 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 using OnionProject.Application.Abstractions;
 using OnionProject.Application.Abstractions.Storage;
 using OnionProject.Application.Features.Queries.Product.GetAllProduct;
+using OnionProject.Application.Features.Commands.Product.UpdateProduct;
 using OnionProject.Application.Features.Queries.Product.GetProductById;
 using OnionProject.Application.Pagination;
 using OnionProject.Application.Repositories.Product;
 using OnionProject.Application.Repositories.ProductImage;
 using OnionProject.Application.ViewModels;
 using OnionProject.Domain.Entities;
+using OnionProject.Application.Messages;
 
 namespace newproj.Controllers;
 [Route("products")]
@@ -42,12 +44,17 @@ public class ProductController : Controller
 
     }
 
-    [HttpGet()]
-    public async Task<IActionResult> Get([FromQuery] GetProductByIdQueryRequest getProductByIdQueryRequest)
+    [HttpGet("{Id}")]
+    public async Task<IActionResult> GetById([FromRoute] GetProductByIdQueryRequest getProductByIdQueryRequest)
     {
 
         GetProductByIdQueryResponse response = await _mediator.Send(getProductByIdQueryRequest);
-        return Ok(response);
+        if(response.Message == Messages.Successfull)
+        {
+            return Ok(response);
+        }
+        return Ok(response.Message);
+       
         
     }
 
@@ -84,18 +91,12 @@ public class ProductController : Controller
        
     }
      [HttpPut("update")]
-    public async Task<ActionResult> Put(VM_Update_Product model)
+    public async Task<ActionResult> Put([FromBody] UpdateProductCommandRequest updateProductCommandRequest)
+        
     {
-        Product product = await _productReadRepository.GetByIdAsync(model.id);
-        product.Stock = model.Stock;
-        product.Name = model.Name;
-        product.Brand = model.Brand;
-        product.Price = model.Price;
-        product.Description = model.Description;
-        product.Quantity = model.Quantity;
-        product.ImageUrl = model.ImageUrl;
-        _ProductWriteRepository.Save();
-        return Ok("succeed");
+        UpdateProductCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+       
+        return Ok(response);
 
     }
 

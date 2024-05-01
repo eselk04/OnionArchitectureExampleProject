@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using OnionProject.Application.Messages;
 using OnionProject.Application.Repositories.Product;
 using System;
 using System.Collections.Generic;
@@ -19,16 +20,28 @@ namespace OnionProject.Application.Features.Queries.Product.GetProductById
         public async Task<GetProductByIdQueryResponse> Handle(GetProductByIdQueryRequest request, CancellationToken cancellationToken)
         {
             var product = await _repository.GetByIdAsync(request.Id);
-
-
-
-            return new()
+          
+                   if(product != null)
             {
-                Name = product.Name,
-                Stock = product.Stock,
-                Price = product.Price
+                return new()
+                {
+                    Name = product.Name,
+                    Stock = product.Stock,
+                    Price = product.Price,
+                    Message = Messages.Messages.Successfull
+                };
+            }
+                   else
+            {
+                return new()
+                {
+                    Message = Messages.Messages.ProductNotFound
+
+                };
+            }
                 
-        };
+            
+         
     }
     }
 }

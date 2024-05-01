@@ -10,11 +10,7 @@ namespace OnionProject.Persistence.Context;
 
 public class PContext : DbContext
 {
-    private readonly IConfiguration _configuration;
-    public PContext(IConfiguration configuration)
-    {
-        _configuration = configuration;
-    }
+   
 
     
     public DbSet<Product>  Products{ get; set; }
@@ -27,7 +23,7 @@ public class PContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql(_configuration.GetValue<string>("PostgreSql").ToString());
+        optionsBuilder.UseNpgsql("User ID =postgres ; Password = eselk0101; Host = localhost;Port =5432; Database = postgres");
     }
 
 

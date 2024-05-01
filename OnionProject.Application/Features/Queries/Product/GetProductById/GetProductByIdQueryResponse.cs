@@ -11,5 +11,6 @@ namespace OnionProject.Application.Features.Queries.Product.GetProductById
         public string Name { get; set; }
         public int Stock { get; set; }
         public decimal Price { get; set; }
+        public string Message { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OnionProject.Application.Features.Commands.Product.UpdateProduct
 {
-    internal class UpdateProductCommandResponse
+    public class UpdateProductCommandResponse
     {
     }
 }
